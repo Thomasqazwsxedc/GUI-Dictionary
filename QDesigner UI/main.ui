@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>484</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dictionary</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>521</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="main">
+     <item>
+      <layout class="QHBoxLayout" name="control">
+       <item>
+        <layout class="QVBoxLayout" name="selection">
+         <item>
+          <widget class="QLabel" name="parameter">
+           <property name="text">
+            <string>Parameter</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="meaning">
+           <property name="text">
+            <string>Meaning</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="pronunciation">
+           <property name="text">
+            <string>Pronunciation</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="spelling">
+           <property name="text">
+            <string>Spelling</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="relation">
+           <property name="text">
+            <string>Relation</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+           <property name="autoRepeat">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="rel_type">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>Adjective → Noun</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Noun → Adjective</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Synonyms</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Triggers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Antonyms</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hypernyms</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hyponyms</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Holonyms</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Meronyms</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Frequent Followers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Frequent Predecessors</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Perfect Rhymes</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Approximate Rhymes</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Homophones</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Consonant Match</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="more_info">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>More Information</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="additional_parameters">
+           <property name="text">
+            <string>Additional Parameters</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="input">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="word_label">
+             <property name="text">
+              <string>Enter a word:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="autocomplete">
+             <property name="text">
+              <string>Autocomplete</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="text_field">
+           <property name="placeholderText">
+            <string>Word</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="dict_search">
+           <item>
+            <widget class="QPushButton" name="dictionary">
+             <property name="text">
+              <string>Dictionary</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="search">
+             <property name="text">
+              <string>Search</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="result">
+           <item>
+            <widget class="QLabel" name="maximum_label">
+             <property name="text">
+              <string>Maximum</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="words_all_switch">
+             <item>
+              <property name="text">
+               <string>Words</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>All</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="about">
+             <property name="text">
+              <string>About</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QComboBox" name="download_mode">
+             <item>
+              <property name="text">
+               <string>Original</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>CSV</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="download_button">
+             <property name="text">
+              <string>Download</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableView" name="tableView"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout_GUI">
+   <property name="text">
+    <string>About Dictionary</string>
+   </property>
+  </action>
+  <action name="actionNew_Tab">
+   <property name="text">
+    <string>New Tab</string>
+   </property>
+  </action>
+  <action name="actionNew_Window">
+   <property name="text">
+    <string>New Window</string>
+   </property>
+  </action>
+  <action name="actionMinimize">
+   <property name="text">
+    <string>Minimize</string>
+   </property>
+  </action>
+  <action name="actionAbout_Python">
+   <property name="text">
+    <string>About Python</string>
+   </property>
+  </action>
+  <action name="actionAbout_Dictionary">
+   <property name="text">
+    <string>About Dictionary</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>relation</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>rel_type</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>meaning</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>rel_type</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>76</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pronunciation</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>rel_type</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spelling</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>rel_type</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
